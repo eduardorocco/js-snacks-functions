@@ -5,6 +5,27 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
 
+function getFirstChar(array) {
+
+   let result = []
+
+   for (let i = 0; i < array.lenght; i++) {
+
+
+    const element = array[i]
+    const firsLetter = element.charAt(0)
+
+    result.push(firstLetter)
+
+   }
+
+   return result
+}
+
+ console.log(getFirstChar(names))
+
+
+
 let firstLetter = names.map(name => name.charAt(0))
 
 

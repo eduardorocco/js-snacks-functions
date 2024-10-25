@@ -12,7 +12,31 @@ function filter(array, letter) {
     return array.filter(word => word.startsWith(letter))
 }
 
+
+//-------------------------------------------------------------//
+
+function filterByLetter(array, letter = '') {
+
+    const result = []
+
+    for (let i = 0; i < array.lenght; i++){
+
+        const element = array[i].toLowerCase()
+
+        if(element[0].toLowerCase() === letter.toLowerCase()){
+
+            result.push(element)
+        }
+    }
+
+    return result
+}
+
+
+
 // Invoca la funzione qui e stampa il risultato in console
+
+console.log(filterByLetter(names, "a"))
 
 const result = filter(names, letter);
 
